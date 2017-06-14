@@ -1,0 +1,55 @@
+<div>
+  <label>Edit Project Name:</label>
+  <br>
+  <input [(ngModel)]="selectedProject.name">
+</div>
+
+<div>
+  <label>Project Owner:</label>
+  <br>
+  <input [(ngModel)]="selectedProject.owner">
+</div>
+
+<div>
+  <label>Project Description:</label>
+  <br>
+  <textarea [(ngModel)]="selectedProject.description"></textarea>
+</div>
+
+<div>
+  <label>Project Goal Amount:</label>
+  <br>
+  <input type="number" [(ngModel)]="selectedProject.goal">
+</div>
+
+<div>
+  <label>Project Purpose:</label>
+  <br>
+  <textarea [(ngModel)]="selectedProject.purpose"></textarea>
+</div>
+
+<div>
+  <label>Project Swag:</label>
+  <br>
+  <textarea [(ngModel)]="selectedProject.swag"></textarea>
+</div>
+
+<div>
+  <label>Project Remainder:</label>
+  <br>
+  <input type="number" [(ngModel)]="selectedProject.remainder">
+</div>
+
+<div>
+  <label>Project Category:</label>
+  <br>
+  <textarea [(ngModel)]="selectedProject.category"></textarea>
+</div>
+
+<div>
+  <label>Project Image URL:</label>
+  <br>
+  <input [(ngModel)]="selectedProject.image">
+</div>
+
+<button (click)="beginUpdatingProject(selectedProject)">Update</button>
