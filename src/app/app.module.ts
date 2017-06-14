@@ -4,12 +4,14 @@ import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { ProjectPlaceComponent } from './project-place/project-place.component';
+import { ProjectDetailComponent } from './project-detail/project-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
-    ProjectPlaceComponent
+    ProjectPlaceComponent,
+    ProjectDetailComponent
   ],
   imports: [
     BrowserModule,
