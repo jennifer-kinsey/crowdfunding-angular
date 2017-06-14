@@ -7,6 +7,7 @@ export class Project {
     public purpose: string,
     public swag: string,
     public remainder: number,
-    public category: string,  
+    public category: string,
+    public image: string,  
     public id: number) { }
 }

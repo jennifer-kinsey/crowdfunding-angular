@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Project } from '../project.model';
 import { Router } from '@angular/router';
 import { ProjectService } from '../project.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-project-place',
@@ -11,7 +12,7 @@ import { ProjectService } from '../project.service';
 })
 
 export class ProjectPlaceComponent implements OnInit {
-  projects: Project[];
+  projects: FirebaseListObservable<any[]>;
 
   constructor(private router: Router, private projectService: ProjectService){}
 

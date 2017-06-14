@@ -1,0 +1,35 @@
+{ "projects": [{
+    "name": "Woman Around The World For Spiritual Healing",
+    "owner": "A Woman",
+    "description": "Traveling the world sounds like an amazing opportunity. And the chance to travel the world on someone else's dime? Even better.",
+    "goal": 10000,
+    "purpose": "so she can advance in her 'spiritual journey.' Sure. She promises that as she travels she will help others realize their own spiritual journey all while living out her dream. How she plans to help others is unclear.",
+    "swag": "none",
+    "remainder": 9500,
+    "category": "selfish",
+    "image": "https://imgix.ranker.com/user_node_img/50064/1001279716/original/the-fund-to-send-a-woman-around-the-world-for-spiritual-healing-photo-u1?w=650&q=50&fm=jpg",
+    "id": "1"
+    }, {
+    "name": "Midlife Crisis Squirrel Tattoo",
+    "owner": "Women from PA",
+    "description": "Now you can help one PA woman cross two items off of her bucket list. The first was to get a squirrel tattoo and the second was to orchestrate an online fundraiser.",
+    "goal": 2000,
+    "purpose": "Freaking out.",
+    "swag": "A digital pic of my new tattoo.",
+    "remainder": 1480,
+    "category": "crisis",
+    "image": "https://imgix.ranker.com/user_node_img/50051/1001019193/original/1-photo-u1?w=650&q=60&fm=jpg",
+    "id": "2"
+    }, {
+    "name": "Goin bald. I need hella hats. Help!",
+    "owner": "Balding Man",
+    "description": "A man in his 30's needs more hats for his balding dome.",
+    "goal": 83,
+    "purpose": "Self confidence and picking up the ladies.",
+    "swag": "none",
+    "remainder": 0,
+    "category": "crisis",
+    "image": "https://imgix.ranker.com/user_node_img/50051/1001018362/original/1-photo-u1?w=650&q=50&fm=jpg",
+    "id": "3"
+  }]
+}
