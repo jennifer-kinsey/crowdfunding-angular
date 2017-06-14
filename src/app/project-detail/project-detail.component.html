@@ -1,13 +1,13 @@
 <div>
-  <h2>{{projectToDisplay.name}}</h2>
-  <h3><em>{{projectToDisplay.owner}}</em></h3>
-  <img src="{{projectToDisplay.image}}"/>
+  <h2>{{(projectToDisplay | async)?.name}}</h2>
+  <h3><em>{{(projectToDisplay | async)?.owner}}</em></h3>
+  <img src="{{(projectToDisplay | async)?.image}}"/>
   <p>
-    {{projectToDisplay.description}}<br>
-    {{projectToDisplay.purpose}}
+    {{(projectToDisplay | async)?.description}}<br>
+    {{(projectToDisplay | async)?.purpose}}
   </p>
-  <h3>${{projectToDisplay.remainder}} of ${{projectToDisplay.goal}} raised!</h3>
+  <h3>${{(projectToDisplay | async)?.remainder}} of ${{(projectToDisplay | async)?.goal}} remaining!</h3>
   <p>
-    {{projectToDisplay.swag}} available for contributors.
+    {{(projectToDisplay | async)?.swag}} available for contributors.
   </p>
 </div>

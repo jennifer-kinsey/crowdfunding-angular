@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Project } from '../project.model';
 import { ProjectService } from '../project.service';
 
+
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
@@ -9,7 +10,6 @@ import { ProjectService } from '../project.service';
   providers: [ProjectService]
 })
 export class AdminComponent implements OnInit {
-
   constructor(private projectService: ProjectService) { }
 
   ngOnInit() {
