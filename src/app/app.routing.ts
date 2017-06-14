@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { ProjectPlaceComponent }   from './project-place/project-place.component';
 import { ProjectDetailComponent }   from './project-detail/project-detail.component';
+import { AdminComponent }   from './admin/admin.component';
 
 const appRoutes: Routes = [
   {
@@ -14,8 +15,12 @@ const appRoutes: Routes = [
     component: ProjectPlaceComponent
   },
   {
-  path: 'projects/:id',
-  component: ProjectDetailComponent
+    path: 'projects/:id',
+    component: ProjectDetailComponent
+  },
+  {
+    path: 'admin',
+    component: AdminComponent
   }
 ];
 

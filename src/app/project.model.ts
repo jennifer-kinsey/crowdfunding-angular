@@ -8,6 +8,5 @@ export class Project {
     public swag: string,
     public remainder: number,
     public category: string,
-    public image: string,  
-    public id: number) { }
+    public image: string) { }
 }

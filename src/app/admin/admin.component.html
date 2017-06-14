@@ -1,3 +1,55 @@
-<p>
-  admin works!
-</p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3>Add New Project to Listings</h3>
+  </div>
+  <div>
+    <div>
+      <label>Project Name:</label>
+      <br>
+      <input #newName>
+    </div>
+
+    <div>
+      <label>Project Owner:</label>
+      <br>
+      <input #newOwner>
+    </div>
+
+    <div>
+      <label>Project Description:</label>
+      <br>
+      <textarea #newDescription></textarea>
+    </div>
+
+    <div>
+      <label>Project Goal Amount:</label>
+      <br>
+      <input type="number" #newGoal>
+    </div>
+
+    <div>
+      <label>Project Purpose:</label>
+      <br>
+      <textarea #newPurpose></textarea>
+    </div>
+
+    <div>
+      <label>Project Swag:</label>
+      <br>
+      <textarea #newSwag></textarea>
+    </div>
+
+    <div>
+      <label>Project Category:</label>
+      <br>
+      <textarea #newCategory></textarea>
+    </div>
+
+    <div>
+      <label>Project Image URL:</label>
+      <br>
+      <input #newImage>
+    </div>
+    <button (click)="submitForm(newName.value, newOwner.value, newDescription.value, newGoal.value, newPurpose.value, newSwag.value, newCategory.value, newImage.value); newName.value=''; newOwner.value=''; newDescription.value=''; newGoal.value=''; newPurpose.value=''; newSwag.value=''; newCategory.value=''; newImage.value='';">Add</button>
+  </div>
+</div>

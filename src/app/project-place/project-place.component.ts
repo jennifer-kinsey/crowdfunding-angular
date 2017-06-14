@@ -21,6 +21,6 @@ export class ProjectPlaceComponent implements OnInit {
   }
 
   goToDetailPage(clickedProject: Project) {
-    this.router.navigate(['projects', clickedProject.id]);
+    // this.router.navigate(['projects', clickedProject.id]);
   };
 }

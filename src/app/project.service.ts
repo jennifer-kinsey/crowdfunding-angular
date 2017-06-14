@@ -15,6 +15,10 @@ export class ProjectService {
     return this.projects;
   }
 
+  addProject(newProject: Project) {
+    this.projects.push(newProject);
+  }
+
   getProjectById(projectId: number) {
     // for (var i = 0; i < PROJECTS.length; i++) {
     //   if (PROJECTS[i].id === projectId) return PROJECTS[i];
