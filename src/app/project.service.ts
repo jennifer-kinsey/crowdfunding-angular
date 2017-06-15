@@ -40,4 +40,11 @@ export class ProjectService {
     var projectEntryInFirebase = this.getProjectById(localProjectToDelete.$key);
     projectEntryInFirebase.remove();
   }
+
+  donate(localProject){
+    var firebaseProject = this.getProjectById(localProject.$key);
+    firebaseProject.update({
+      remainder: localProject.remainder
+    });
+  }
 }

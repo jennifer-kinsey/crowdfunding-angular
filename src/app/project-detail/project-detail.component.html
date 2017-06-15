@@ -10,4 +10,9 @@
   <p>
     swag: {{(projectToDisplay | async)?.swag}} available for contributors.
   </p>
+
+<div *ngFor="let project of projects | async">
+  <div *ngIf="project.$key === (projectToDisplay | async)?.$key">
+    <app-funding [selectedProject]='project'></app-funding>
+  </div>
 </div>
