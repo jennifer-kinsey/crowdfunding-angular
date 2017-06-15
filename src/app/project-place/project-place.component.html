@@ -1,12 +1,32 @@
-<h2>Projects</h2>
 
-<div *ngFor="let project of projects | async" class="panel panel-default all-projects">
-  <div class="panel-body">
-    <h3 (click)="goToDetailPage(project)">{{project.name}} <em>by {{project.owner}}</em></h3>
-    <div *ngIf="currentRoute === '/admin'">
-      {{project.description}}
-      <hr>
-      <app-edit-project [selectedProject]="project"></app-edit-project>
+<div class="row">
+  <div class="col-sm-4">
+    <div (click)="onClick('crisis')" (click)="goToCategoryPage('crisis')" class="well" id="crisis">
+      <h2>Crisis</h2>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div (click)="onClick('uncalled-for')"  (click)="goToCategoryPage('uncalled-for')" class="well" id="uncalled-for">
+      <h2>Uncalled-for</h2>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div (click)="onClick('selfish')" (click)="goToCategoryPage('selfish')" class="well" id="selfish">
+      <h2>Selfish</h2>
+    </div>
+  </div>
+</div>
+
+<div id="project-container">
+  <h2>Projects</h2>
+  <div *ngFor="let project of projects | async | category:filterByCategory" class="panel panel-default all-projects">
+    <div class="panel-body">
+      <h3 (click)="goToDetailPage(project)">{{project.name}} <em>by {{project.owner}}</em></h3>
+      <div *ngIf="currentRoute === '/admin'">
+        {{project.description}}
+        <hr>
+        <app-edit-project [selectedProject]="project"></app-edit-project>
+      </div>
     </div>
   </div>
 </div>

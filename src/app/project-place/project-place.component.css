@@ -1,3 +1,31 @@
 .all-projects:last-child {
   margin-bottom: 100px;
 }
+
+.row {
+  margin-top: 50px;
+}
+
+.well {
+  text-align: center;
+}
+
+#crisis {
+  background-image: url('../../assets/images/coffee.jpg');
+  background-position: center;
+  height: 34em;
+}
+
+#selfish {
+  background-image: url('../../assets/images/lip-injections.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 34em;
+}
+
+#uncalled-for {
+  background-image: url('../../assets/images/pillow.jpg');
+  background-position: center;
+  height: 34em;
+}

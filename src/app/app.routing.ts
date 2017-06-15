@@ -25,7 +25,12 @@ const appRoutes: Routes = [
   {
     path: 'new-project',
     component: AdminComponent
+  },
+  {
+    path: ':category',
+    component: ProjectPlaceComponent
   }
+
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
