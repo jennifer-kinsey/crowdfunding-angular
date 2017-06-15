@@ -35,4 +35,9 @@ export class ProjectService {
                                 category: localUpdatedProject.category,
                                 image: localUpdatedProject.image});
   }
+
+  deleteProject(localProjectToDelete){
+    var projectEntryInFirebase = this.getProjectById(localProjectToDelete.$key);
+    projectEntryInFirebase.remove();
+  }
 }
