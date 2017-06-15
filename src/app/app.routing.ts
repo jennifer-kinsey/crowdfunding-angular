@@ -21,6 +21,10 @@ const appRoutes: Routes = [
   {
     path: 'admin',
     component: AdminComponent
+  },
+  {
+    path: 'new-project',
+    component: AdminComponent
   }
 ];
 

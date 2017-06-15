@@ -1,6 +1,6 @@
 <div>
   <h2>{{(projectToDisplay | async)?.name}}</h2>
-  <h3><em>{{(projectToDisplay | async)?.owner}}</em></h3>
+  <h3><em>by {{(projectToDisplay | async)?.owner}}</em></h3>
   <img src="{{(projectToDisplay | async)?.image}}"/>
   <p>
     {{(projectToDisplay | async)?.description}}<br>
@@ -8,6 +8,6 @@
   </p>
   <h3>${{(projectToDisplay | async)?.remainder}} of ${{(projectToDisplay | async)?.goal}} remaining!</h3>
   <p>
-    {{(projectToDisplay | async)?.swag}} available for contributors.
+    swag: {{(projectToDisplay | async)?.swag}} available for contributors.
   </p>
 </div>

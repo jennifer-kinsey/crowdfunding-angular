@@ -1,6 +1,6 @@
 <h2>Projects</h2>
 
-<div *ngFor="let project of projects | async" class="panel panel-default">
+<div *ngFor="let project of projects | async" class="panel panel-default all-projects">
   <div class="panel-body">
     <h3 (click)="goToDetailPage(project)">{{project.name}} <em>by {{project.owner}}</em></h3>
     <div *ngIf="currentRoute === '/admin'">
